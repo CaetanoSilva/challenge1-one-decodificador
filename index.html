@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "pt">
+	<head>
+		<meta charset="UTF-8">
+		<title>Codificador de Texto</title>
+		<link rel="stylesheet" href="stylo.css"/>
+		<link rel="stylesheet" href="reset.css"/>
+	</head>
+	<body>
+		<header>
+			<section class="logo">
+				<img src="img/logo.svg" alt="Descodificador"/>
+			</section>
+		</header>
+	<main>
+		<section class="tela-criptografar">
+			<textarea placeholder="Digite o Seu Texto...." class="input-criptografar" id="texto-criptografar" model="input-criptografar"></textarea>
+			<div class="informacao">
+				<img src="img/informacao.svg" alt="informacao"/>
+				<span>Acentos não é perminito.🧐</span>
+			</div>
+		</section>
+			<div class="botoes">
+				<button id="btn_criptografar" onclick="oculta(); exibir(); criptografa()">Criptografar</button>
+				<button id="btn_descriptografar" onclick="descriptografa()">Descriptografar</button>
+			</div>
+		<section class="tela-criptografado">
+			<textarea class="input-criptografado" id="exibir" model="input-criptografado"></textarea>
+			<img src="img/busca.png" alt="imgbusca" id="oculta" />
+			<p class="msg1" id="msg1">Nenhuma mensagem encontrada!</p>
+			<p class="msg2" id="msg2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+			<button class="btn_copy" id="copia" onclick="copy()">Copiar</button>
+			
+		</section>
+	</main>
+	<footer>
+		<section class="dev">
+			<p class="copyright">&copy Copyright Caetano Santos - 2022</p>
+		</section>
+				<a href="https://www.linkedin.com/" target="_blank" class="link1">
+					<img src="img/linkedin.png" alt="Icone do Linkedin" class="link">
+				</a>
+				<a href="https://github.com" target="_blank" class="git1">
+					<img src="img/github.png" alt="Icone do GitHub" class="git">
+				</a>
+	</footer>
+	<script src="js/index.js"></script>
+</body>
+</html>
